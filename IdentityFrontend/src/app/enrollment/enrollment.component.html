@@ -1,0 +1,11 @@
+<form class="identity-form center" (ngSubmit)="validate()" #loginForm="ngForm">
+
+  <h4>Successful attempt count {{ counter }}</h4>
+  <mat-form-field class="full-width">
+    <mat-icon matPrefix>perm_identity</mat-icon>
+    <input #usernameInput matInput placeholder="Username" name="username" [(ngModel)]="username" required email
+      autocomplete="off" minlength="10" (keyup)="onKeyEvent($event)" (keydown)="onKeyEvent($event)">
+  </mat-form-field>
+
+  <button type="submit" mat-raised-button color="primary">Validate</button>
+</form>

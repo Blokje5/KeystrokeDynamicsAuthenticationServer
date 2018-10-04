@@ -1,0 +1,21 @@
+<mat-horizontal-stepper [linear]="true" #stepper>
+  <mat-step>
+    <form >
+      <ng-template matStepLabel>Register a user</ng-template>
+      <h2>First sign up a new user account</h2>
+      <app-registration></app-registration>
+    </form>
+  </mat-step>
+  <mat-step>
+    <form>
+      <ng-template matStepLabel>Enrollment</ng-template>
+      <h2>Next perform 6 successful attempts at typing the target string</h2>
+      <app-enrollment></app-enrollment>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <h2>Login</h2>
+    <app-login></app-login>
+  </mat-step>
+</mat-horizontal-stepper>

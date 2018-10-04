@@ -1,0 +1,19 @@
+<form class="identity-form center" (ngSubmit)="register()" #registerForm="ngForm">
+
+    <mat-form-field class="full-width">
+      <mat-icon matPrefix>perm_identity</mat-icon>
+      <input id="register-username" data-lpignore="true" matInput placeholder="Username" name="username" [(ngModel)]="username" required email autocomplete="off"  minlength="10">
+    </mat-form-field>
+  
+    <mat-form-field class="full-width">
+        <mat-icon matPrefix>security</mat-icon>
+        <input id="register-password" data-lpignore="true" type="password" matInput placeholder="Password" name="password" [(ngModel)]="password" required  minlength="10">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-icon matPrefix>security</mat-icon>
+        <input id="register-confirm-password" data-lpignore="true" type="password" matInput placeholder="Confirm Password" name="confirmPassword" [(ngModel)]="confirmPassword" required minlength="10">
+    </mat-form-field>
+  
+    <button type="submit" mat-raised-button color="primary">Register</button>
+  </form>

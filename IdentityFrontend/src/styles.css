@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.full-width {
+    width: 100%;
+}
+
+.identity-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .layout-fill{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center{
+    width: 75%;
+    margin: 10px auto;
+  }
